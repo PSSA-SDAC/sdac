@@ -1,2 +1,3 @@
-# sdac
-Repo for the PSSA Social Data Analysis Committee
+# Social Data Analysis Committee 
+
+This is the repository for The Social Data Analysis Committee (SDAC), published by PSSA. 

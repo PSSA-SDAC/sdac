@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Website Demo",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html#contributors",
+    "href": "index.html#contributors",
+    "title": "Lipad Contributor Demo in R",
+    "section": "Contributors:",
+    "text": "Contributors:\n\nBavan\nArun\nTaiba\nMike\n\netc.\n\n\nDomain hosting (~$22/year): https://domains.squarespace.com/?channel=bd&subchannel=google-domain&campaign=&subcampaign=&source=google_domain_referral\n\n# Code chunks can go here.\n\nPublishing with Quarto\nhttps://cran.r-project.org/web/packages/quarto/vignettes/publishing.html\nhttps://quarto.org/docs/websites\nhttps://quarto.org/docs/publishing\nhttps://quarto.org/docs/publishing/quarto-pub.html\nhttps://quarto.org/docs/output-formats/html-publishing.html\n\nCreate Quarto pub account\n\nOption for hosting with a different provide:"
+  }
+]

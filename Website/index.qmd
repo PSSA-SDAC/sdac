@@ -41,3 +41,5 @@ title: "Lipad Contributor Demo in R"
 2.  Option for hosting with a different provide:
 
 ![](images/Picture2.png)
+![](images/1.jpg)
+

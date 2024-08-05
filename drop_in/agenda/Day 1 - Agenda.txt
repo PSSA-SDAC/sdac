@@ -1,0 +1,15 @@
+Drop-in Day 1:
+
+1. Introductions
+
+2. Patrick: what do you want to do session
+
+3. Data comes in all shapes & sizes
+- Attendance Form
+- Thesis Data
+
+4. Install R and what it is?
+
+5. Coding Script
+
+6. What does this mean? - featuring ChatGPT

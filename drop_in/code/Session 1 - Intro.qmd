@@ -1,0 +1,214 @@
+---
+title: "Session 1 - Intro"
+author: "SDAC"
+format: 
+  html:
+    embed-resources: true
+    df-print: paged
+editor: visual
+---
+
+# 1. Packages
+
+```{r}
+install.packages("tidyverse") # for tidy data/data cleaning
+library(tidyverse)
+```
+
+# 2. Vector
+
+-   There are many "things" you can set up in R. They're not actually called things, but for now we'll just refer to them as things.
+
+    -   There are an infinite types of things: lists, tables, vectors, objects...
+
+-   We'll set up one kind of "thing" in R – in this case, a **vector –** containing **a series of numbers**.
+
+```{r}
+# This blue box here is a Code Chunk.
+
+# Creating a Vector "a":
+a <- c(1, 2, 3, 4, 5) # Creates a vector 'a' containing the numbers 1 to 5.
+# To execute this (make it happen) you can click the green arrow, or you can press Ctrl + Enter.
+```
+
+The arrow "**\<-**" here is saying, we're going to "**name**" whatever comes after the arrow.
+
+-   So... we named this vector (a series of numbers – specifically, 1, 2, 3, 4, 5) "**a**".
+
+We know that we have "created" this vector, because it will appear in the **Global Environment** (to our right).
+
+-   The info in the Global Environment details what type of "thing" a is. You can fool around, right click, get additional details by playing around in the GE, or you can clear your environment.
+
+    -   If you clear the environment, you'll have to re-run the Code Chunk above to get "**a**" again.
+
+Let's list everything currently in our GE (we should see "a").
+
+```{r}
+ls() # Lists all the objects in the current R environment.
+```
+
+# 3. What's in "a"? – print what's in "**a**"
+
+```{r}
+a # Prints the vector 'a' to the console.
+
+length(a) # Returns the length of the vector "a", which is 5.
+
+str(a) # Displays the internal structure of "a".
+# You can use this to identify what your "thing" is.
+```
+
+# 4. Loading files
+
+-   R comes pre-loaded with some datasets to play with. One popular one for learning is "**mtcars**".
+
+```{r}
+# Loading mtcars:
+data("mtcars") # Loads the built-in dataset 'mtcars' into the environment.
+
+mtcars # Prints the 'mtcars' dataset to the console.
+```
+
+-   Let's look what's in **mtcars** using "View".
+
+```{r}
+# view mtcars
+View(mtcars) # Opens the 'mtcars' dataset in a spreadsheet-like viewer.
+```
+
+-   What if we want to save the stuff in **mtcars** into an external file like a spreadsheet we can use in Excel (.csv)?
+
+```{r}
+# write mtcars to disk
+write.csv(x = mtcars, "mtcars.csv")
+# This writes the "mtcars" dataset to a CSV file named "mtcars.csv".
+
+# read data
+mtcars <- read.csv("mtcars.csv")  # Reads the 'mtcars.csv' file back into R and stores it in the variable 'mtcars'.
+```
+
+# 5. Back to our "a" vector
+
+-   We can look at the specific things in our vector "**a**".
+
+    -   Remember it's numbers 1-5. What's the 3rd number in the series? What about the 1st number? What about the 5th number?
+
+```{r}
+# Accessing parts ("elements") of the vector "a".
+a[3]  # Accesses the 3rd element of the vector 'a', which is 3.
+a[1]  # Accesses the 1st element of the vector 'a', which is 1.
+a[5]  # Accesses the 5th element of the vector 'a', which is 5.
+```
+
+# 6. Creating a new "thing" – a "list".
+
+-   We can create a group of numbers.
+
+```{r}
+# create a list of numbers:
+numbers_list <- c(1, 3, 5, 7, 9) # Create a list and call it "numbers_list".
+
+numbers_list # Print out what's in this list.
+```
+
+-   We can do some math calculations on our numbers:
+
+```{r}
+min(numbers_list) # Returns the minimum value in 'numbers', which is 1.
+
+max(numbers_list) # Returns the maximum value in 'numbers', which is 10.
+
+median(numbers_list) # Returns the median value of 'numbers', which is 5.5.
+
+mean(numbers_list) # Returns the mean (average) value of 'numbers', which is 5.5.
+
+# standard of deviation (with the argument "sd")
+std_dev <- sd(numbers_list)  
+# Calculates the standard deviation of 'numbers' and stores it in "std_dev.
+
+std_dev  # Prints the standard deviation to the console.
+```
+
+# 7. Athletes
+
+-   There are different types of of files we can load into R.
+
+-   We can also load files directly from websites.
+
+-   We'll pull this .txt file that has a bunch of data about female athletes (we'll look at their heights).
+
+```{r}
+# Read the text file and name it "athletes":
+athletes <- read_tsv("http://ritsokiguess.site/datafiles/ais.txt")
+athletes # Look at what's in athletes
+```
+
+-   Arguments to know:
+
+    -   **\$** = "what's in this".
+
+    -   **%\>%** = "and then".
+
+    -   **group_by** = pull together only "these" things.
+
+    -   **mean =** average.
+
+    -   **na.rm** = "ignore any cells that have missing stuff in them".
+
+```{r}
+# Calculate the average height (Ht) for each sport:
+average_height <- athletes %>%
+  group_by(Sport) %>%  # Group the data by the "Sport" column
+  
+  summarize(avg_ht = mean(Ht, na.rm = TRUE))  
+  # Calculate the average height for each sport, ignoring missing values
+
+# View the summarized data frame:
+average_height
+BMI
+WT
+```
+
+# 8. Plotting the Athletes
+
+-   **ggplot2** is a package *within* the **tidyverse** package. It's one of the easiest (and most commonly used) graphing packages available in R.
+
+```{r}
+# Plot the average height (Ht) of each sport using ggplot2
+ggplot(average_height, aes(x = Sport, y = avg_ht)) +  
+# Initialize the ggplot with average_height, mapping Sport to x-axis and avg_ht to y-axis, reordering Sport based on avg_ht
+
+  geom_col(fill = "blue") +  
+  # This creates a bar plot with blue bar ("fill)
+  
+  labs(title = "Average Height of Athletes in Different Sports",  
+  # Add a title to the plot
+       
+       x = "Sport",  # Label for the x-axis
+       y = "Average Height (cm)") +  # Label for the y-axis
+  
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  
+  # Customize the x-axis text to be angled at 45 degrees for better readability
+```
+
+# 9. GPT's Attempt at a Scatter Plot (1)
+
+```{r}
+ggplot(average_height, aes(x = Sport, y = avg_ht)) +  
+  geom_point(color = "blue", size = 3) +  
+  labs(title = "Average Height of Athletes in Different Sports",  
+       x = "Sport",  
+       y = "Average Height (cm)") +  
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  
+```
+
+# 10. GPT's Attempt at a Scatter Plot (2)
+
+```{r}
+ggplot(average_height, aes(x = Sport, y = avg_ht, color = Sport)) +  
+  geom_point(size = 3) +  
+  labs(title = "Average Height of Athletes in Different Sports",  
+       x = "Sport",  
+       y = "Average Height (cm)") +  
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```

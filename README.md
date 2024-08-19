@@ -18,9 +18,13 @@ In-person Data-thons where students compete to solve complex political science p
 ## Unit 0: Research Opportunities, Your Future, & AI
 ## SDAC & Grad School Preparation – Sep 3:
 •	What is SDAC?
+
 •	Academic CV (Research Experience, Publications, Conferences)
+
 •	Developing a GitHub portfolio, GitHub.io
+
 •	Installing IDEs & SCE
+
 •	Accessibility: GPT – how to interact, prompt engineer, and code with AI
 
 ## Seminar with Guest Professor(s) – Sep 5: 
@@ -36,20 +40,24 @@ In-person Data-thons where students compete to solve complex political science p
 
 ## Workshop 2 – Sep 26/28: Data Cleaning/Data Manipulation
 •	Packages: Dplyr/Tidyverse
+
 •	Dataset: Argentinian 2024 Election
 
 ## Workshop 3 – Oct 8/10: Interactive Data Visualization
 •	Packages: Plotly
+
 •	Dataset: 2021 American Election
 
 ## Workshop 4 – Oct 22/24: Interactive Geospatial Visualization
 •	Packages: Sf, Leaflet
+
 •	Dataset: 2021 American Election
 
 [Reading week: Oct 28 - Nov 1]
 
 ## Workshop 5 – Nov 4: Web App Development – shipping code to Shiny
 •	Shiny (create free account: www.shinyapps.io)
+
 •	Dataset: 2021 American Election
 
 ## Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling

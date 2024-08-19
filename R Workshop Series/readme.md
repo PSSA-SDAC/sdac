@@ -1,0 +1,1 @@
+A Series of Workshops for PSSA to teach computational and quantitative analysis skills to political science students. 

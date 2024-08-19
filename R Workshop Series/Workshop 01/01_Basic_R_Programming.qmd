@@ -240,5 +240,4 @@ plot(
   pch = 19,
   col = "darkgreen"
 )
-
 ```

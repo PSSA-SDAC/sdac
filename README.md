@@ -6,7 +6,7 @@ The Social Data Analysis Committee (SDAC) aims to introduce undergraduate politi
 SDAC workshops are designed to provide hands-on experience in data analysis using R and Python – covering various topics from research methods to machine learning.
 
 ## Drop-in Codings Days:
-Drop-in Data Days are randomly scheduled days dedicated to learning to code and playing with data. These sessions provide an informal environment for students to work on personal projects, seek help, and collaborate with peers.
+Randomly scheduled, informal environment dedicated to learning to code, playing with data, and collaborating with peers.
 
 ## Stats & Coding Helpline:
 Accessible via the Committee GitHub Pages (forthcoming). Students can request help with specific problems and be connected with an upper-year student or committee member who can assist them.

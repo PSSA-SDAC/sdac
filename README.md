@@ -1,8 +1,8 @@
-# Social Data Analysis Committee 
-## Objectives
+# UTSC PSSA - Social Data Analysis Committee 
+## Objectives:
 The Social Data Analysis Committee (SDAC) aims to introduce undergraduate political science students to data science skills to enhance their research capabilities and professional careers. Through workshops, projects, and competitions, students will learn to analyze and interpret social data, develop professional GitHub portfolios, and gain insights into political, social, and economic issues.
 
-## Workshop Series
+## Workshop Series:
 SDAC workshops are designed to provide hands-on experience in data analysis using R and Python – covering various topics from research methods to machine learning.
 
 ## Drop-in Codings Days:
@@ -73,14 +73,19 @@ In-person Data-thons where students compete to solve complex political science p
 
 ## Workshop 8-12:Learning Python – Programming Language
 • Installation & Modules, Language basics
+
 •	Loops, Basic Coding
+
 •	Intro to Pandas
+
 •	Project demonstrations
 
 ## Additional Topics
 •	Game Theory
+
 •	Web scraping
 
 ## Stop-dates
 •	Semester 1: Nov 28
+
 •	Semester 2: […]

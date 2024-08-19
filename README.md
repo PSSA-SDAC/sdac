@@ -14,7 +14,7 @@ Accessible via the Committee GitHub Pages (forthcoming). Students can request he
 ## Events:
 In-person Data-thons where students compete to solve complex political science problems under time constraints. Prizes will be awarded to the top teams.
 
-# Team:
+## Team:
 •	Michael Cowan, Patrick Schnurbusch (HBA Political Science, 2015), Ibrahim Sereer, Eric Wu, Arun Kamalakanthan, Taiba Ahmed
 
 # Fall Semester

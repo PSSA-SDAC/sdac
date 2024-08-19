@@ -1,5 +1,5 @@
 ---
-title: "Session 1 - Intro"
+title: "Session 1 - Intro to R"
 author: "SDAC"
 format: 
   html:
@@ -8,10 +8,12 @@ format:
 editor: visual
 ---
 
+# Intro to Packages, Read/Write, ggplot, GPT
+
 # 1. Packages
 
 ```{r}
-install.packages("tidyverse") # for tidy data/data cleaning
+install.packages("tidyverse") # for tidy data/cleaning
 library(tidyverse)
 ```
 
@@ -79,11 +81,11 @@ View(mtcars) # Opens the 'mtcars' dataset in a spreadsheet-like viewer.
 -   What if we want to save the stuff in **mtcars** into an external file like a spreadsheet we can use in Excel (.csv)?
 
 ```{r}
-# write mtcars to disk
+# Write mtcars to disk:
 write.csv(x = mtcars, "mtcars.csv")
 # This writes the "mtcars" dataset to a CSV file named "mtcars.csv".
 
-# read data
+# Read in data:
 mtcars <- read.csv("mtcars.csv")  # Reads the 'mtcars.csv' file back into R and stores it in the variable 'mtcars'.
 ```
 
@@ -191,7 +193,7 @@ ggplot(average_height, aes(x = Sport, y = avg_ht)) +
   # Customize the x-axis text to be angled at 45 degrees for better readability
 ```
 
-# 9. GPT's Attempt at a Scatter Plot (1)
+# 9. GPT's 1st Attempt at a Scatter Plot
 
 ```{r}
 ggplot(average_height, aes(x = Sport, y = avg_ht)) +  
@@ -202,7 +204,7 @@ ggplot(average_height, aes(x = Sport, y = avg_ht)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))  
 ```
 
-# 10. GPT's Attempt at a Scatter Plot (2)
+# 10. GPT's 2nd Attempt
 
 ```{r}
 ggplot(average_height, aes(x = Sport, y = avg_ht, color = Sport)) +  

@@ -14,9 +14,11 @@ Accessible via the Committee GitHub Pages (forthcoming). Students can request he
 ## Events:
 In-person Data-thons where students compete to solve complex political science problems under time constraints. Prizes will be awarded to the top teams.
 
+# Team:
+•	Michael Cowan, Patrick Schnurbusch (HBA Political Science, 2015), Ibrahim Sereer, Eric Wu, Arun Kamalakanthan, Taiba Ahmed
+
 # Fall Semester
-## Unit 0: Research Opportunities, Your Future, & AI
-## SDAC & Grad School Preparation – Sep 3:
+## Intro: SDAC & Grad School Preparation – Sep 3:
 •	What is SDAC?
 
 •	Academic CV (Research Experience, Publications, Conferences)
@@ -27,16 +29,14 @@ In-person Data-thons where students compete to solve complex political science p
 
 •	Accessibility: GPT – how to interact, prompt engineer, and code with AI
 
-## Seminar with Guest Professor(s) – Sep 5: 
+## Intro: Seminar with Guest Professor(s) – Sep 5: 
 •	Student Theses, POLD02, research opportunities, project demos
 
-# Unit 1: Introduction to Research Methods & Statistics
-## Methods Workshop – Sep 17/19: Methods, Descriptive Statistics, p < .05.
+## Intro: Methods Workshop – Sep 17/19: Methods, Descriptive Statistics, p < .05.
 •	CLT, Distributions, Normal QQ plots, Types of Graphs
 
-# Unit 2: Learning R – Statistical Computing Environment
-## Workshop 1 – Sep 10/12: Installation & Packages
-•	R, R-Studio
+## Workshop 1 – Sep 10/12: Learning R – Statistical Computing Environment
+•	R, R-Studio, Installation & Packages
 
 ## Workshop 2 – Sep 26/28: Data Cleaning/Data Manipulation
 •	Packages: Dplyr/Tidyverse
@@ -62,19 +62,20 @@ In-person Data-thons where students compete to solve complex political science p
 
 ## Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling
 
-# Unit 3: Learning Python – Programming Language
-## Workshop 1: Python – Installation & Modules, Language basics
-## Workshop 2: Python – Loops, Basic Coding
-## Workshop 3: Python – Intro to Pandas
-## Workshop 4: Python – Projects
-
 # Winter Semester
-## Unit 4: Deep Learning
-## Workshop 1: What is Deep Learning?
+## Workshop 6: Deep Learning
+•	What is Deep Learning?
+
 •	Graduate project demonstration (Neural Networks & Twitter firehose)
 
-## Unit 5: Strengthening your Portfolio
-•	Graduate project demonstration (Neural Networks & Twitter firehose)
+## Workshop 7: Strengthening your Portfolio
+•	GitHub walkthrough, GitHub.io
+
+## Workshop 8-12:Learning Python – Programming Language
+• Installation & Modules, Language basics
+•	Loops, Basic Coding
+•	Intro to Pandas
+•	Project demonstrations
 
 ## Additional Topics
 •	Game Theory
@@ -83,6 +84,3 @@ In-person Data-thons where students compete to solve complex political science p
 ## Stop-dates
 •	Semester 1: Nov 28
 •	Semester 2: […]
-
-# Team:
-•	Michael Cowan, Patrick Schnurbusch (HBA Political Science, 2015), Ibrahim Sereer, Eric Wu, Arun Kamalakanthan, Taiba Ahmed

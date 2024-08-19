@@ -1,0 +1,244 @@
+---
+title: "Workshop 01"
+subtitle: "Introduction to R for Political Science"
+author: "Patrick Schnurbusch"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+format: 
+  html:
+    toc: true
+    toc-depth: 2
+    toc-float: true
+    number-sections: true
+editor: visual
+---
+
+# Introduction
+
+Welcome to the world of R programming! In this document, we will explore the basics of R, focusing on concepts that are particularly useful for political science students. By the end of this guide, you will be comfortable with fundamental R concepts, enabling you to perform basic data analysis.
+
+# Setting Up R and RStudio
+
+Before we begin coding, let’s make sure you have R and RStudio installed on your computer.
+
+-   **Install R**: Download R
+
+-   **Install RStudio**: Download RStudio
+
+# Basic R Concepts
+
+## R as a Calculator
+
+R can be used to perform basic arithmetic calculations:
+
+```{r}
+# Addition
+2 + 3
+
+# Subtraction
+7 - 4
+
+# Multiplication
+6 * 9
+
+# Division
+12 / 4
+
+# Exponentiation
+2^3
+```
+
+## Logic in R
+
+Logical operations are essential in programming and data analysis, allowing you to make decisions based on conditions. In R, logical expressions return TRUE or FALSE and are often used in filtering data, making comparisons, and controlling the flow of a program.
+
+### Basic Logical Operators
+
+Here are some common logical operators in R:
+
+-   `==` : [Equal]{.underline} to
+
+-   `!=` : Not equal to
+
+-   `>` : Greater than
+
+-   `<` : Less than
+
+-   `>=` : Greater than or equal to
+
+-   `<=` : Less than or equal to
+
+```{r}
+# Check if two values are equal
+5 == 5  # TRUE
+
+# Check if two values are not equal
+5 != 3  # TRUE
+
+# Greater than comparison
+7 > 14   # FALSE
+
+# Less than or equal to comparison
+3 <= 5  # TRUE
+```
+
+## Variables and Assignment:
+
+Learn how to store values in variables for later use:
+
+```{r}
+# Assign a value to a variable
+number_of_voters <- 500
+
+# Use the variable in calculations
+voter_turnout <- number_of_voters * 0.75
+voter_turnout
+```
+
+# Working with Data
+
+## Creating a Simple Data Frame
+
+Data frames are essential in R for handling datasets, which are often in the form of tables:
+
+```{r}
+# Create a simple data frame
+election_data <- data.frame(
+  Region = c("North", "South", "East", "West"),
+  RegionID = c(1, 2, 3, 4), 
+  Voters = c(1200, 850, 780, 950),
+  Turnout = c(0.65, 0.70, 0.75, 0.68)
+)
+
+# View the data frame
+print(election_data)
+```
+
+## Basic Data Operations
+
+Learn how to select, filter, and summarize data:
+
+```{r}
+# Selecting a column
+election_data$Voters
+```
+
+```{r}
+# Filtering rows by index 
+second_row <- election_data[2, ]
+print(second_row)
+```
+
+```{r}
+# Filtering rows by value 
+high_turnout <- election_data[election_data$Turnout > 0.7, ]
+print(high_turnout)
+```
+
+```{r}
+# Summarizing data
+mean_turnout <- mean(election_data$Turnout)
+mean_turnout
+```
+
+## Combining Logical Operators
+
+Logical operators can be combined using `&` (AND) and `|` (OR):
+
+-   `&` : Returns `TRUE` if both conditions are true.
+
+-   `|` : Returns `TRUE` if at least one condition is true.
+
+These combined logical operations are particularly powerful when working with data frames, as they allow you to filter data based on multiple criteria.
+
+### Example: Filtering Data with Combined Conditions
+
+Imagine you have a dataset of voter turnout rates across different regions. You might want to filter the data to focus only on regions where voter turnout is above 0.60 but below 0.70. Here’s how you can do that:
+
+```{r}
+# Filter regions with turnout greater than 0.60 but less than 0.70
+target_turnout <- election_data[election_data$Turnout > 0.60 & election_data$Turnout < 0.70, ]
+print(target_turnout)
+```
+
+### Using OR Operator for Broader Filtering
+
+The OR operator (`|`) can be used when you want to include data that meets at least one of multiple conditions. For example, if you’re interested in regions with either very high or very low turnout, you can filter the data accordingly:
+
+```{r}
+# Filter regions with turnout less than 0.65 or greater than 0.70
+extreme_turnout <- election_data[election_data$Turnout < 0.65 | election_data$Turnout > 0.70, ]
+print(extreme_turnout)
+```
+
+#### Logical Functions in Data Analysis
+
+In addition to combining conditions, R offers built-in functions to work with logical values, which are useful for summarizing and analyzing your data:
+
+-   **`any()`**: Checks if any values in a logical vector are `TRUE`.
+
+-   **`all()`**: Checks if all values in a logical vector are `TRUE`.
+
+### Summarizing Turnout Data
+
+You can use these functions to quickly assess your dataset. For instance, you might want to check if any region has a turnout rate above a certain threshold, or if all regions meet a minimum turnout criterion:
+
+```{r}
+# Check if any regions have a turnout above 0.75
+any_high_turnout <- any(election_data$Turnout > 0.75)
+any_high_turnout  # TRUE
+
+# Check if all regions have a turnout above 0.60
+all_above_60 <- all(election_data$Turnout > 0.60)
+all_above_60  # TRUE
+
+```
+
+# Basic Plotting
+
+## Bar Plot
+
+Visualizing data is a key skill. Let’s create a simple bar plot:
+
+```{r}
+# Bar plot of voter turnout by region
+barplot(
+  election_data$Turnout,
+  names.arg = election_data$Region,
+  col = "blue",
+  main = "Voter Turnout by Region"
+)
+```
+
+## Pie Chart
+
+Pie charts are useful for showing proportions within a dataset. Let’s create a pie chart to visualize the proportion of voters in different regions:
+
+```{r}
+# Pie chart of voter distribution by region
+pie(
+  election_data$Voters,
+  labels = election_data$Region,
+  col = rainbow(length(election_data$Region)),
+  main = "Voter Distribution by Region"
+)
+```
+
+In this pie chart, each slice represents the number of voters in a particular region. The size of the slice corresponds to the proportion of voters in that region relative to the total.
+
+## Scatter Plot
+
+Scatter plots are great for exploring relationships between two variables. Let’s create a scatter plot to examine the relationship between the number of voters and turnout rates:
+
+```{r}
+# Scatter plot of Voters vs. Turnout
+plot(
+  election_data$Voters,
+  election_data$Turnout,
+  xlab = "Number of Voters",
+  ylab = "Turnout Rate",
+  main = "Scatter Plot of Voters vs. Turnout",
+  pch = 19,
+  col = "darkgreen"
+)
+
+```

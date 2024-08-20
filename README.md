@@ -9,9 +9,9 @@ The Social Data Analysis Committee (SDAC) aims to introduce undergraduate politi
 - [Events](#events)
 - [Team](#team)
 - [Fall Semester](#fall-semester)
-    - [Intro: SDAC & Grad School Preparation – Sep 3](#intro-sdac--grad-school-preparation--sep-3)
-    - [Intro: Seminar with Guest Professor(s) – Sep 5](#intro-seminar-with-guest-professors--sep-5)
-    - [Intro: Methods Workshop – Sep 17/19](#intro-methods-workshop--sep-1719)
+    - [SDAC & Grad School Preparation – Sep 3](#intro-sdac--grad-school-preparation--sep-3)
+    - [Seminar with Guest Professor(s) – Sep 5](#intro-seminar-with-guest-professors--sep-5)
+    - [Methods Workshop – Sep 17/19](#intro-methods-workshop--sep-1719)
     - [Workshop 1 – Sep 10/12: Learning R](#workshop-1--sep-1012-learning-r)
     - [Workshop 2 – Sep 26/28: Data Cleaning/Data Manipulation](#workshop-2--sep-2628-data-cleaningdata-manipulation)
     - [Workshop 3 – Oct 8/10: Interactive Data Visualization](#workshop-3--oct-810-interactive-data-visualization)
@@ -41,7 +41,7 @@ In-person Data-thons where students compete to solve complex political science p
 •	Michael Cowan, Patrick Schnurbusch (HBA Political Science, 2015), Ibrahim Sereer, Eric Wu, Arun Kamalakanthan, Taiba Ahmed
 
 # Fall Semester
-## Intro: SDAC & Grad School Preparation – Sep 3:
+## SDAC & Grad School Preparation – Sep 3:
 •	What is SDAC?
 
 •	Academic CV (Research Experience, Publications, Conferences)
@@ -52,10 +52,10 @@ In-person Data-thons where students compete to solve complex political science p
 
 •	Accessibility: GPT – how to interact, prompt engineer, and code with AI
 
-## Intro: Seminar with Guest Professor(s) – Sep 5: 
+## Seminar with Guest Professor(s) – Sep 5: 
 •	Student Theses, POLD02, research opportunities, project demos
 
-## Intro: Methods Workshop – Sep 17/19: Methods, Descriptive Statistics, p < .05.
+## Methods Workshop – Sep 17/19: Methods, Descriptive Statistics, Nvivo Demonstration.
 •	CLT, Distributions, Normal QQ plots, Types of Graphs
 
 ## Workshop 1 – Sep 10/12: Learning R – Statistical Computing Environment

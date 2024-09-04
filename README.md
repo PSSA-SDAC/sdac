@@ -20,9 +20,9 @@ Through workshops, projects, and competitions, students will learn to analyze an
     - [Workshop 5 – Nov 4: Web App Development – Shiny](#workshop-5--nov-4-web-app-development--shiny)
 - [Winter Semester](#winter-semester)
     - [Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling](#workshop-6--nov-1821-machine-learningpredictive-modelling)
-    - [Workshop 6: Deep Learning](#workshop-6-deep-learning)
-    - [Workshop 7: Strengthening your Portfolio](#workshop-7-strengthening-your-portfolio)
-    - [Workshop 8-12: Learning Python](#workshop-8-12-learning-python)
+    - [Workshop 7: Deep Learning](#workshop-6-deep-learning)
+    - [Workshop 8: Strengthening your Portfolio](#workshop-7-strengthening-your-portfolio)
+    - [Workshop 9-12: Learning Python](#workshop-8-12-learning-python)
 - [Additional Topics](#additional-topics)
 - [Stop-dates](#stop-dates)
 
@@ -80,14 +80,14 @@ In-person Data-thon(s) where students compete to solve complex political science
 
 ## Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling
 
-## Workshop 6: Deep Learning
+## Workshop 7: Deep Learning
 - What is Deep Learning?
 - Graduate project demonstration (Neural Networks & Twitter firehose)
 
-## Workshop 7: Strengthening your Portfolio
+## Workshop 8: Strengthening your Portfolio
 - GitHub walkthrough, GitHub.io
 
-## Workshop 8-12: Learning Python
+## Workshop 9-12: Learning Python
 - Installation & Modules, Language basics
 - Loops, Basic Coding
 - Intro to Pandas

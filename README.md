@@ -11,16 +11,15 @@ Through workshops, projects, and competitions, students will learn to analyze an
 - [Events](#events)
 - [Team](#team)
 - [Fall Semester](#fall-semester)
-    - [SDAC & Grad School Preparation – Sep 3](#intro-sdac--grad-school-preparation--sep-3)
-    - [Seminar with Guest Professor(s) – Sep 5](#intro-seminar-with-guest-professors--sep-5)
-    - [Methods Workshop – Sep 17/19](#intro-methods-workshop--sep-1719)
-    - [Workshop 1 – Sep 10/12: Learning R](#workshop-1--sep-1012-learning-r)
+    - [SDAC & Grad School Preparation – Sep 10](#intro-sdac--grad-school-preparation--sep-10)
+    - [Seminar with Guest Professor(s) – Sep 12](#intro-methods-seminar-with-guest-professors--sep-12)
+    - [Workshop 1 – Sep 17/19: Learning R](#workshop-1--sep-1719-learning-r)
     - [Workshop 2 – Sep 26/28: Data Cleaning/Data Manipulation](#workshop-2--sep-2628-data-cleaningdata-manipulation)
     - [Workshop 3 – Oct 8/10: Interactive Data Visualization](#workshop-3--oct-810-interactive-data-visualization)
     - [Workshop 4 – Oct 22/24: Interactive Geospatial Visualization](#workshop-4--oct-2224-interactive-geospatial-visualization)
     - [Workshop 5 – Nov 4: Web App Development – Shiny](#workshop-5--nov-4-web-app-development--shiny)
-    - [Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling](#workshop-6--nov-1821-machine-learningpredictive-modelling)
 - [Winter Semester](#winter-semester)
+    - [Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling](#workshop-6--nov-1821-machine-learningpredictive-modelling)
     - [Workshop 6: Deep Learning](#workshop-6-deep-learning)
     - [Workshop 7: Strengthening your Portfolio](#workshop-7-strengthening-your-portfolio)
     - [Workshop 8-12: Learning Python](#workshop-8-12-learning-python)
@@ -44,21 +43,19 @@ In-person Data-thon(s) where students compete to solve complex political science
 
 # Fall Semester
 
-## Intro: SDAC & Grad School Preparation – Sep 3
+## Intro: SDAC & Grad School Preparation – Sep 10
 - What is SDAC?
 - Academic CV (Research Experience, Publications, Conferences)
 - Developing a GitHub portfolio, GitHub.io
 - Installing IDEs & SCE
 - Accessibility: GPT – how to interact, prompt engineer, and code with AI
 
-## Intro: Seminar with Guest Professor(s) – Sep 5
+## Intro & Methods: Seminar with Guest Professor(s) – Sep 12
 - Student Theses, POLD02, research opportunities, project demos
-
-## Intro: Methods Workshop – Sep 17/19
 - Methods, Descriptive Statistics, p < .05
 - CLT, Distributions, Normal QQ plots, Types of Graphs
 
-## Workshop 1 – Sep 10/12: Learning R
+## Workshop 1 – Sep 17/19: Learning R
 - R, R-Studio, Installation & Packages
 
 ## Workshop 2 – Sep 26/28: Data Cleaning/Data Manipulation
@@ -79,9 +76,9 @@ In-person Data-thon(s) where students compete to solve complex political science
 - Shiny (create free account: www.shinyapps.io)
 - Dataset: 2021 American Election
 
-## Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling
-
 # Winter Semester
+
+## Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling
 
 ## Workshop 6: Deep Learning
 - What is Deep Learning?

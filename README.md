@@ -4,8 +4,8 @@ The Social Data Analysis Committee (SDAC) aims to introduce undergraduate politi
 Through workshops, projects, and competitions, students will learn to analyze and interpret social data, develop professional GitHub portfolios, and gain insights into political, social, and economic issues.
 
 ## Team
-- Michael Cowan, Patrick Schnurbusch (HBA Political Science, 2015), Ibrahim Sereer, Eric Wu, Arun Kamalakanthan, Taiba Ahmed
-- 
+- Michael Cowan, Patrick Schnurbusch (BA Political Science, 2015), Ibrahim Sereer, Eric Wu, Arun Kamalakanthan, Taiba Ahmed
+
 ## Table of Contents
 
 [Workshop Series](#workshop-series)

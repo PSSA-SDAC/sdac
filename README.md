@@ -3,6 +3,9 @@ The Social Data Analysis Committee (SDAC) aims to introduce undergraduate politi
 
 Through workshops, projects, and competitions, students will learn to analyze and interpret social data, develop professional GitHub portfolios, and gain insights into political, social, and economic issues.
 
+## Team
+- Michael Cowan, Patrick Schnurbusch (HBA Political Science, 2015), Ibrahim Sereer, Eric Wu, Arun Kamalakanthan, Taiba Ahmed
+- 
 ## Table of Contents
 
 [Workshop Series](#workshop-series)
@@ -30,16 +33,13 @@ Through workshops, projects, and competitions, students will learn to analyze an
 SDAC workshops are designed to provide hands-on experience in data analysis using R and Python – covering various topics from research methods to machine learning.
 
 ## Drop-in Coding Days
-Randomly scheduled, informal environment dedicated to learning to code, playing with data, and collaborating with peers.
+Randomly scheduled, informal environment dedicated to learning to code, playing with data, and collaborating with peers. Events will appear on https://www.instagram.com/pssa.utsc/.
 
 ## Stats & Coding Helpline
-Accessible via the Committee GitHub Pages (forthcoming). Students can request help with specific problems and be connected with an upper-year student or committee member who can assist them.
+Request help with specific problems and be connected with an upper-year student or committee member who can assist! Email sdac.pssa@gmail.com to request a timeslot!
 
 ## Events
 In-person Data-thon(s) where students compete to solve complex political science problems under time constraints. Prizes will be awarded to the top teams.
-
-## Team
-- Michael Cowan, Patrick Schnurbusch (HBA Political Science, 2015), Ibrahim Sereer, Eric Wu, Arun Kamalakanthan, Taiba Ahmed
 
 # Fall Semester
 

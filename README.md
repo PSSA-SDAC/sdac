@@ -39,7 +39,7 @@ Randomly scheduled, informal environment dedicated to learning to code, playing 
 Request help with specific problems and be connected with an upper-year student or committee member who can assist! Email sdac.pssa@gmail.com to request a timeslot!
 
 ## Events
-In-person Data-thon(s) where students compete to solve complex political science problems under time constraints. Prizes will be awarded to the top teams.
+Semesterly in-person Data-thon(s) where students compete to solve complex political science problems under time constraints (dates forthcoming). Prizes will be awarded to the top teams.
 
 # Fall Semester
 

@@ -4,11 +4,9 @@ The Social Data Analysis Committee (SDAC) aims to introduce undergraduate politi
 Through workshops, projects, and competitions, students will learn to analyze and interpret social data, develop professional GitHub portfolios, and gain insights into political, social, and economic issues.
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20Template.png" alt="SDAC Template" style="width:300px; margin-right: 10px;">
-  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/UofT%Logo.jpg" alt="UofT Scarborough" style="width:300px;">
+  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20Template.png" alt="SDAC Template" style="width:500px; margin-right: 10px;">
+  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/UofT%20Logo.jpg" alt="UofT Logo" style="width:500px;">
 </div>
-
-
 
 ## Team
 - Michael Cowan, Patrick Schnurbusch (BA Political Science, 2015), Ibrahim Sereer, Eric Wu, Arun Kamalakanthan, Taiba Ahmed

@@ -15,22 +15,22 @@ Through workshops, projects, and competitions, students will learn to analyze an
 
 [Workshop Series](#workshop-series)
 - [Drop-in Coding Days](#drop-in-coding-days)
-- [Stats & Coding Helpline](#stats-coding-helpline)
+- [Stats & Coding Helpline](#stats--coding-helpline)
 - [Events](#events)
 - [Team](#team)
 - [Fall Semester](#fall-semester)
     - [SDAC & Grad School Preparation – Sep 10](#intro-sdac--grad-school-preparation--sep-10)
-    - [Seminar with Guest Professor(s) – Sep 12](#intro-methods-seminar-with-guest-professors--sep-12)
-    - [Workshop 1 – Sep 17/19: Learning R](#workshop-1--sep-1719-learning-r)
-    - [Workshop 2 – Sep 26/28: Data Cleaning/Data Manipulation](#workshop-2--sep-2628-data-cleaningdata-manipulation)
-    - [Workshop 3 – Oct 8/10: Interactive Data Visualization](#workshop-3--oct-810-interactive-data-visualization)
-    - [Workshop 4 – Oct 22/24: Interactive Geospatial Visualization](#workshop-4--oct-2224-interactive-geospatial-visualization)
+    - [Seminar with Guest Professor(s) – Sep 12](#intro--methods-seminar-with-guest-professors--sep-12)
+    - [Workshop 1 – Sep 17/19: Learning R](#workshop-1--sep-17-19-learning-r)
+    - [Workshop 2 – Sep 26/28: Data Cleaning/Data Manipulation](#workshop-2--sep-26-28-data-cleaningdata-manipulation)
+    - [Workshop 3 – Oct 8/10: Interactive Data Visualization](#workshop-3--oct-8-10-interactive-data-visualization)
+    - [Workshop 4 – Oct 22/24: Interactive Geospatial Visualization](#workshop-4--oct-22-24-interactive-geospatial-visualization)
     - [Workshop 5 – Nov 4: Web App Development – Shiny](#workshop-5--nov-4-web-app-development--shiny)
 - [Winter Semester](#winter-semester)
-    - [Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling](#workshop-6--nov-1821-machine-learningpredictive-modelling)
-    - [Workshop 7: Deep Learning](#workshop-6-deep-learning)
-    - [Workshop 8: Strengthening your Portfolio](#workshop-7-strengthening-your-portfolio)
-    - [Workshop 9-12: Learning Python](#workshop-8-12-learning-python)
+    - [Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling](#workshop-6--nov-18-21-machine-learningpredictive-modelling)
+    - [Workshop 7: Deep Learning](#workshop-7-deep-learning)
+    - [Workshop 8: Strengthening your Portfolio](#workshop-8-strengthening-your-portfolio)
+    - [Workshop 9-12: Learning Python](#workshop-9-12-learning-python)
 - [Additional Topics](#additional-topics)
 - [Stop-dates](#stop-dates)
 
@@ -104,4 +104,4 @@ Semesterly in-person Data-thon(s) where students compete to solve complex politi
 
 ## Stop-dates
 - Semester 1: Nov 28
-- Semester 2: […]
+- Semester 2: [TBD]

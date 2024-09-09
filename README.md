@@ -5,7 +5,7 @@ Through workshops, projects, and competitions, students will learn to analyze an
 
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20Template.png" alt="SDAC Template" style="width:300px; margin-right: 10px;">
-  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/UofT%20Scarborough.jpg" alt="UofT Scarborough" style="width:300px;">
+  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/UofT%Logo.jpg" alt="UofT Scarborough" style="width:300px;">
 </div>
 
 

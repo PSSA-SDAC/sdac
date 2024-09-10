@@ -12,15 +12,9 @@ Through workshops, projects, and competitions, students will learn to analyze an
 - Michael Cowan, Patrick Schnurbusch (BA Political Science, 2015), Ibrahim Sereer, Eric Wu, Arun Kamalakanthan, Taiba Ahmed
 
 ## Table of Contents
-
-[Workshop Series](#workshop-series)
-- [Drop-in Coding Days](#drop-in-coding-days)
-- [Stats & Coding Helpline](#stats--coding-helpline)
-- [Events](#events)
-- [Team](#team)
 - [Fall Semester](#fall-semester)
     - [Intro - Sep 10: SDAC & Grad School Preparation](#intro---sep-10-sdac--grad-school-preparation)
-    - [Intro & Methods - Sep 12: Recap, Seminar with Guest Professor(s)](#intro--methods---sep-12-recap-seminar-with-guest-professors)
+    - [Intro & Methods - Sep 12: Recap, Theses, Intro to Stats](#intro--methods---sep-12-recap-theses-intro-to-stats)
     - [Workshop 1 – Sep 17/19: Learning R](#workshop-1--sep-1719-learning-r)
     - [Workshop 2 – Sep 26/28: Data Cleaning/Data Manipulation](#workshop-2--sep-2628-data-cleaningdata-manipulation)
     - [Workshop 3 – Oct 8/10: Interactive Data Visualization](#workshop-3--oct-810-interactive-data-visualization)
@@ -29,24 +23,18 @@ Through workshops, projects, and competitions, students will learn to analyze an
 - [Winter Semester](#winter-semester)
     - [Workshop 6 – Machine Learning/Predictive Modelling](#workshop-6--machine-learningpredictive-modelling)
     - [Workshop 7: Deep Learning](#workshop-7-deep-learning)
-    - [Workshop 8: Strengthening your Portfolio](#workshop-8-strengthening-your-portfolio)
-    - [Workshop 9-12: Learning Python](#workshop-9-12-learning-python)
-- [Additional Topics](#additional-topics)
-- [Stop-dates](#stop-dates)
+    - [Workshop 8: Building your Portfolio](#workshop-8-building-your-portfolio)
+    - [Workshop 9: Web Scraping](#workshop-9-web-scraping)
+    - [Workshop 10: Learning Python](#workshop-10-learning-python)
+- [Drop-in Coding Days](#drop-in-coding-days)
+- [Faculty/Guest Talks](#facultyguest-talks)
+- [Stats & Coding Helpline](#stats--coding-helpline)
+- [Semesterly Datathons](#semesterly-datathons)
 
-## Workshop Series
+# Workshop Series
 SDAC workshops are designed to provide hands-on experience in data analysis using R and Python – covering various topics from research methods to machine learning.
 
-## Drop-in Coding Days
-Randomly scheduled, informal environment dedicated to learning to code, playing with data, and collaborating with peers. Events will appear on https://www.instagram.com/pssa.utsc/.
-
-## Stats & Coding Helpline
-Request help with specific problems and be connected with an upper-year student or committee member who can assist! Email sdac.pssa@gmail.com to request a timeslot!
-
-## Events
-Semesterly in-person Data-thon(s) where students compete to solve complex political science problems under time constraints (dates forthcoming). Prizes will be awarded to the top teams.
-
-# Fall Semester
+## Fall Semester
 
 ## Intro - Sep 10: SDAC & Grad School Preparation
 - What is SDAC?
@@ -55,8 +43,8 @@ Semesterly in-person Data-thon(s) where students compete to solve complex politi
 - Installing IDEs
 - Accessibility: GPT – how to interact, prompt engineer, and code with AI
 
-## Intro & Methods - Sep 12: Recap, Seminar with Guest Professor(s)
-- Review Intro
+## Intro & Methods - Sep 12: Recap, Theses, Intro to Stats
+- Recap
 - Student Theses, POLD02, research opportunities
 - Methods, Descriptive Statistics, p < .05
 - CLT, Distributions, Normal QQ plots, Types of Graphs
@@ -82,27 +70,40 @@ Semesterly in-person Data-thon(s) where students compete to solve complex politi
 - Shiny (create free account: www.shinyapps.io)
 - Dataset: 2021 American Election
 
-# Winter Semester
+## Winter Semester
 
 ## Workshop 6 – Machine Learning/Predictive Modelling
+- Dataset: 2024 American Election
 
 ## Workshop 7: Deep Learning
 - What is Deep Learning?
 - Graduate project demonstration (Neural Networks & Twitter firehose)
 
-## Workshop 8: Strengthening your Portfolio
+## Workshop 8: Building your Portfolio
 - GitHub walkthrough, GitHub.io
 
-## Workshop 9-12: Learning Python
+## Workshop 9: Web Scraping
+- Selenium (R)
+
+## Workshop 10: Learning Python
 - Installation & Modules, Language basics
 - Loops, Basic Coding
 - Intro to Pandas
 - Project demonstrations
 
-## Additional Topics
-- Game Theory
-- Web scraping
+# Drop-in Coding Days
+Randomly scheduled, informal environment dedicated to learning to code, playing with data, and collaborating with peers. Events will appear on https://www.instagram.com/pssa.utsc/.
 
-## Stop-dates
-- Semester 1: Nov 28
-- Semester 2: [TBD]
+# Faculty/Guest Talks
+- Game Theory
+- Survey Research
+- NVivo demo
+- Indigenous Research Methodologies
+- Natural Language Processing
+- Algorithmic Gerrymandering
+
+# Stats & Coding Helpline
+Request help with specific problems and be connected with an upper-year student or committee member who can assist! Email sdac.pssa@gmail.com to request a timeslot!
+
+# Semesterly Datathons
+Race against the clock to solve a coding problem for prizes!

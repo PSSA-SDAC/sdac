@@ -27,7 +27,7 @@ Through workshops, projects, and competitions, students will learn to analyze an
     - [Workshop 4 – Oct 22/24: Interactive Geospatial Visualization](#workshop-4--oct-2224-interactive-geospatial-visualization)
     - [Workshop 5 – Nov 4: Web App Development – Shiny](#workshop-5--nov-4-web-app-development--shiny)
 - [Winter Semester](#winter-semester)
-    - [Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling](#workshop-6--nov-1821-machine-learningpredictive-modelling)
+    - [Workshop 6 – Machine Learning/Predictive Modelling](#workshop-6--machine-learningpredictive-modelling)
     - [Workshop 7: Deep Learning](#workshop-7-deep-learning)
     - [Workshop 8: Strengthening your Portfolio](#workshop-8-strengthening-your-portfolio)
     - [Workshop 9-12: Learning Python](#workshop-9-12-learning-python)
@@ -84,7 +84,7 @@ Semesterly in-person Data-thon(s) where students compete to solve complex politi
 
 # Winter Semester
 
-## Workshop 6 – Nov 18/21: Machine Learning/Predictive Modelling
+## Workshop 6 – Machine Learning/Predictive Modelling
 
 ## Workshop 7: Deep Learning
 - What is Deep Learning?

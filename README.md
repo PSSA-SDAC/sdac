@@ -56,7 +56,8 @@ Semesterly in-person Data-thon(s) where students compete to solve complex politi
 - Accessibility: GPT – how to interact, prompt engineer, and code with AI
 
 ## Intro & Methods - Sep 12: Recap, Seminar with Guest Professor(s)
-- Student Theses, POLD02, research opportunities, project demos
+- Review Intro
+- Student Theses, POLD02, research opportunities
 - Methods, Descriptive Statistics, p < .05
 - CLT, Distributions, Normal QQ plots, Types of Graphs
 

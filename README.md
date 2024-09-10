@@ -52,7 +52,7 @@ Semesterly in-person Data-thon(s) where students compete to solve complex politi
 - What is SDAC?
 - Academic CV (Research Experience, Publications, Conferences)
 - Developing a GitHub portfolio, GitHub.io
-- Installing IDEs & SCE
+- Installing IDEs
 - Accessibility: GPT – how to interact, prompt engineer, and code with AI
 
 ## Intro & Methods: Seminar with Guest Professor(s) – Sep 12

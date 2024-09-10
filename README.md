@@ -41,7 +41,7 @@ SDAC workshops are designed to provide hands-on experience in data analysis usin
 - Academic CV (Research Experience, Publications, Conferences)
 - Developing a GitHub portfolio, GitHub.io
 - Installing IDEs
-- Accessibility: GPT – how to interact, prompt engineer, and code with AI
+- Accessibility: GPT – how to interact and learn to code with AI
 
 ## Intro & Methods - Sep 12: Recap, Theses, Intro to Stats
 - Recap

@@ -95,6 +95,7 @@ SDAC workshops are designed to provide hands-on experience in data analysis usin
 Randomly scheduled, informal environment dedicated to learning to code, playing with data, and collaborating with peers. Events will appear on https://www.instagram.com/pssa.utsc/.
 
 # Faculty/Guest Talks
+## Topics
 - Game Theory
 - Survey Research
 - NVivo demo

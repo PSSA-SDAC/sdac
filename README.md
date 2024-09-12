@@ -81,7 +81,7 @@ SDAC workshops are designed to provide hands-on experience in data analysis usin
 - Graduate project demonstration (Neural Networks & Twitter firehose)
 
 ### Workshop 8 – Building your Portfolio
-- GitHub walkthrough, GitHub.io
+- GitHub walkthrough, GitHub.io, LaTeX
 
 ### Workshop 9 – Web Scraping
 - Selenium (R)

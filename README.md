@@ -14,7 +14,7 @@ Through workshops, projects, and competitions, students will learn to analyze an
 ## Table of Contents
 - [Fall Semester](#fall-semester)
     - [Intro – SDAC & Grad School Preparation (Sep 10)](#intro--sdac--grad-school-preparation-sep-10)
-    - [Intro & Methods – Recap, Theses, Intro to Stats (Sep 12)](#intro--methods--recap-theses-intro-to-stats-sep-12)
+    - [Methods – Recap, Theses, Intro to Stats (Sep 12)](#methods--recap-theses-intro-to-stats-sep-12)
     - [Workshop 1 – Learning R (Sep 17/19)](#workshop-1--learning-r-sep-1719)
     - [Workshop 2 – Data Cleaning/Data Manipulation (Sep 26/28)](#workshop-2--data-cleaningdata-manipulation-sep-2628)
     - [Workshop 3 – Interactive Data Visualization (Oct 8/10)](#workshop-3--interactive-data-visualization-oct-810)
@@ -43,10 +43,11 @@ SDAC workshops are designed to provide hands-on experience in data analysis usin
 - Installing IDEs
 - Accessibility: GPT – how to interact and learn to code with AI
 
-### Intro & Methods – Recap, Theses, Intro to Stats (Sep 12)
+### Methods – Recap, Theses, Intro to Stats (Sep 12)
 - Recap
 - Student Theses, POLD02, research opportunities
-- Methods, Descriptive Statistics, p < .05
+- Methods
+- Descriptive Statistics, p < .05
 - CLT, Distributions, Normal QQ plots, Types of Graphs
 
 ### Workshop 1 – Learning R (Sep 17/19)

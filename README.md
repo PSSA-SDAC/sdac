@@ -65,7 +65,7 @@ SDAC workshops are designed to provide hands-on experience in data analysis usin
 - Packages: Sf, Leaflet
 - Dataset: 2021 American Election
 
-[Reading week: Oct 28 - Nov 1]
+_Reading week: Oct 28 - Nov 1_
 
 ### Workshop 5 – Web App Development – Shiny (Nov 4)
 - Shiny (create free account: www.shinyapps.io)

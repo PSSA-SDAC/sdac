@@ -53,7 +53,7 @@ SDAC workshops are designed to provide hands-on experience in data analysis usin
 ### Workshop 1 – Learning R from Scratch (Sep 17/19)
 - R, R-Studio, Installation & Packages
 
-### Workshop 2 – Data Cleaning/Data Manipulation (Sep 26/28)
+### Workshop 2 – Data Cleaning/Data Manipulation (Sep 24/26)
 - Packages: Dplyr/Tidyverse
 - Dataset: Argentinian 2024 Election
 

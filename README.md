@@ -32,7 +32,7 @@ Through workshops, projects, and competitions, students will learn to analyze an
 - [Semesterly Datathons](#semesterly-datathons)
 
 # Workshop Series
-SDAC workshops are designed to provide hands-on experience in data analysis using R and Python – covering various topics from research methods to machine learning.
+SDAC workshops are designed to provide hands-on experience in data analysis using R and Python – covering various topics from research methods to machine learning (join https://utoronto.zoom.us/j/7179732234).
 
 ## Fall Semester
 

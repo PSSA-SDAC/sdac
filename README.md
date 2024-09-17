@@ -50,7 +50,7 @@ SDAC workshops are designed to provide hands-on experience in data analysis usin
 - Descriptive Statistics, p < .05
 - CLT, Distributions, Normal QQ plots, Types of Graphs
 
-### Workshop 1 – Learning R (Sep 17/19)
+### Workshop 1 – Learning R from Scratch (Sep 17/19)
 - R, R-Studio, Installation & Packages
 
 ### Workshop 2 – Data Cleaning/Data Manipulation (Sep 26/28)
@@ -86,7 +86,7 @@ _Reading week: Oct 28 - Nov 1_
 ### Workshop 9 – Web Scraping
 - Selenium (R)
 
-### Workshop 10 – Learning Python
+### Workshop 10 – Learning Python from Scratch
 - Installation & Modules, Language basics
 - Loops, Basic Coding
 - Intro to Pandas

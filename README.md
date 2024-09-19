@@ -8,7 +8,10 @@ Through workshops, projects, and competitions, students will learn to analyze an
   <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/UofT%20Logo.jpg" alt="UofT Logo" style="width:350px; margin-right: 10px;">
 
 ## Current Events
+<div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20-%20Workshop%201%20%28Instagram%29.png" alt="SDAC Workshop 1" style="width:400px;">
+  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20-%20Workshop%201%20%28Instagram%29.png" alt="SDAC Workshop 2" style="width:400px;">
+</div>
 </div>
 
 ## SDAC (PSSA) Team

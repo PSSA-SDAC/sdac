@@ -5,11 +5,12 @@ Through workshops, projects, and competitions, students will learn to analyze an
 
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20Template.png" alt="SDAC Template" style="width:500px; margin-right: 10px;">
-  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/UofT%20Logo.jpg" alt="UofT Logo" style="width:500px;">
+  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/UofT%20Logo.jpg" alt="UofT Logo" style="width:500px; margin-right: 10px;">
+  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20-%20Workshop%201%20%28Instagram%29.png" alt="SDAC Workshop 1" style="width:500px;">
 </div>
 
-## Team
-- Michael Cowan, Patrick Schnurbusch (BA Political Science, 2015), Ibrahim Sereer, Eric Wu, Arun Kamalakanthan, Taiba Ahmed
+## SDAC (PSSA) Team
+- Michael Cowan, Patrick Schnurbusch (BA Political Science, 2015), Ibrahim Sereer, Eric Wu
 
 ## Table of Contents
 - [Fall Semester](#fall-semester)

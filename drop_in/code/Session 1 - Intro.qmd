@@ -13,7 +13,6 @@ editor: visual
 # 1. Packages
 
 ```{r}
-install.packages("tidyverse") # for tidy data/cleaning
 library(tidyverse)
 ```
 
@@ -118,11 +117,11 @@ numbers_list # Print out what's in this list.
 ```{r}
 min(numbers_list) # Returns the minimum value in 'numbers', which is 1.
 
-max(numbers_list) # Returns the maximum value in 'numbers', which is 10.
+max(numbers_list) # Returns the maximum value in 'numbers', which is 9.
 
-median(numbers_list) # Returns the median value of 'numbers', which is 5.5.
+median(numbers_list) # Returns the median value of 'numbers', which is 5.
 
-mean(numbers_list) # Returns the mean (average) value of 'numbers', which is 5.5.
+mean(numbers_list) # Returns the mean (average) value of 'numbers', which is 5.
 
 # standard of deviation (with the argument "sd")
 std_dev <- sd(numbers_list)  
@@ -167,6 +166,7 @@ average_height <- athletes %>%
 
 # View the summarized data frame:
 average_height
+
 BMI
 WT
 ```

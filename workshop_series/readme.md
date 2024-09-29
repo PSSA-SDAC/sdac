@@ -1,6 +1,6 @@
 A Series of Workshops for PSSA to teach computational and quantitative analysis skills to political science students. 
 
-Taught by: Patrick Schnurbusch 
+Taught by: Patrick Schnurbusch, Michael Cowan 
 
 Workshop 1 – Learning R from Scratch (Sep 17/19)
 R, R-Studio, Installation & Packages

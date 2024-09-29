@@ -113,4 +113,4 @@ Randomly scheduled, informal environment dedicated to learning to code, playing 
 Request help with specific problems and be connected with an upper-year student or committee member who can assist! Email sdac.pssa@gmail.com to request a timeslot!
 
 # Semesterly Datathons
-Race against the clock to solve a coding problem for prizes!
+TBA

@@ -64,17 +64,17 @@ SDAC workshops are designed to provide hands-on experience in data analysis usin
 
 ### Workshop 3 – Interactive Data Visualization (Oct 8/10)
 - Packages: Plotly
-- Dataset: 2021 American Election
+- Dataset: 2020 American Election
 
 ### Workshop 4 – Interactive Geospatial Visualization (Oct 22/24)
 - Packages: Sf, Leaflet
-- Dataset: 2021 American Election
+- Dataset: 2020 American Election
 
 _Reading week: Oct 28 - Nov 1_
 
 ### Workshop 5 – Web App Development – Shiny (Nov 4)
 - Shiny (create free account: www.shinyapps.io)
-- Dataset: 2021 American Election
+- Dataset: 2020 American Election
 
 ## Winter Semester
 

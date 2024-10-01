@@ -1,0 +1,32 @@
+---
+title: "Workshop 03"
+subtitle: "Interactive Data Visualization"
+author: "Patrick Schnurbusch"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+format: 
+  html: 
+    embed-resources: true
+    df-print: paged
+editor: visual
+---
+
+```{r}
+library(dplyr)
+library(plotly)
+```
+
+```{r}
+df <- read.csv("00_data/US_Pres_2020_Results.csv")
+
+df 
+
+df %>% glimpse()
+
+df %>% summary()
+```
+# Bar Charts 
+
+# Scatter Plots 
+
+# Pie Charts 
+

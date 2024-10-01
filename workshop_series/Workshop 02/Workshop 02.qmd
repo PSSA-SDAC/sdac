@@ -1,0 +1,352 @@
+---
+title: "Workshop 02"
+subtitle: "Data Cleaning / Data Manipulation"
+author: "Patrick Schnurbusch"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+format: 
+  html: 
+    embed-resources: true
+    df-print: paged
+editor: visual
+---
+
+# Preamble
+
+In this workshop today we will demonstrate how to clean and manipulate the date to get the results you want in the format you need. Data cleaning is a thankless but important step in any data analysis project. It is the cornerstone that lays the foundation for more analysis and is how we can develop systems by taking advantage of these various tools. Data cleaning in real world applications takes about 70-75% of the work in any data science projects. However the tools are simple and easy to use, the only difference is what too you need for the job.
+
+# Background
+
+![](https://upload.wikimedia.org/wikipedia/commons/9/9e/2023_Argentina_General_Election_map.svg){fig-align="left"}
+
+In today's workshop we will imagine we are part of a political science research team for University of Toronto. Our research is focused on Latin American elections and our team lead is one of the Professors, and they have sent us a dataset from Argentina for the 2023 election results. What we are researching is not important. Our research lead wants to know where Milei's support base is in Argentina so he/she/they can do more targeted analytics to explain the electoral results.
+
+Objectives:
+
+1.  In the first round of voting, where is Milei's support base?
+
+    1.  these can be of interest for the 'first wave' of support
+
+2.  In the second round of voting where was the widest and closest margins electorally?
+
+    1.  these are may be of interest for understanding the 'final push'
+
+We have scrapped the electoral data from Wikipedia and you will need to download the first_round.csv and second_round.csv files to engage in this workshop.
+
+You can read the article [here](https://en.wikipedia.org/wiki/2023_Argentine_general_election "wikipedia"), view the first round results [here](https://en.wikipedia.org/wiki/2023_Argentine_general_election#Results_by_province,_first_round "wikipedia") and second round results [here.](https://en.wikipedia.org/wiki/2023_Argentine_general_election#Results_by_province,_second_round "wikipedia")
+
+```{r config_global_code_chunks, include=FALSE}
+# This will apply to all code chunks in the document
+
+# hide all 
+knitr::opts_chunk$set(echo = FALSE)
+
+# show all 
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load_libraries, include=FALSE}
+# Library
+# install.packages("dplyr")
+library(dplyr)
+```
+
+```{r load_data}
+# Load Data -----
+first_round <-read.csv("00_data/Results by province (first round).csv")
+second_round <-read.csv("00_data/Results by province (second round).csv")
+
+```
+
+# Inspect the Data
+
+```{r}
+# Inspect the Data ----
+
+first_round
+second_round
+
+#?head()
+#?tail() 
+
+head(first_round)
+tail(first_round)
+
+summary(first_round)
+summary(second_round)
+
+first_round %>% glimpse()
+second_round %>% glimpse()
+
+summary(first_round$Milei_Pct)
+```
+
+# Select Columns
+
+```{r}
+#?dplyr::select()
+
+first_round %>%
+  dplyr::select(Province, Milei_Votes, Milei_Pct)
+
+first_round %>% 
+  dplyr::select(Province:Massa_Pct)
+
+first_round %>% 
+  dplyr::select(1:3)
+
+first_round %>% 
+  dplyr::select(Province, matches("Milei"))
+
+first_round %>% 
+  dplyr::select(Province, matches(c("Milei", "Massa")))
+```
+
+# Filtering Results
+
+```{r}
+
+# ?dplyr::filter
+first_round %>% 
+  dplyr::filter(Milei_Pct > 20.0)
+
+first_round %>% 
+  dplyr::filter(Milei_Pct < 20.0)
+
+first_round %>% 
+  dplyr::filter(Milei_Pct > 20.0 & Milei_Pct <= 25.0)
+
+first_round %>% 
+  dplyr::filter(Province == "Buenos Aires")
+
+first_round %>% 
+  dplyr::filter(Province == "Buenos Aires" | Province == "Chaco")
+
+first_round %>% 
+  dplyr::filter(Province %in% c("Buenos Aires", "Chaco"))
+
+```
+
+```{r}
+target_provinces <- c("Buenos Aires", "Chaco", "Formosa")
+
+first_round %>% 
+  dplyr::filter(!Province %in% target_provinces)
+```
+
+```{r}
+# ?tidyselect::contains
+
+first_round %>% 
+  dplyr::select(Province, contains("Milei")) %>% 
+  dplyr::filter(Milei_Pct > 40)
+```
+
+# Getting the Top/Bottom N
+
+```{r}
+
+#?dplyr::arrange()
+
+first_round %>% 
+  dplyr::select(Province, Milei_Votes, Milei_Pct) %>%
+  dplyr::arrange(desc(Milei_Pct)) %>% 
+  dplyr::slice_head(n = 3)
+
+first_round %>% 
+  dplyr::select(Province, Milei_Votes, Milei_Pct) %>%
+  dplyr::arrange(desc(Milei_Pct)) %>% 
+  dplyr::slice_tail(n = 3)
+```
+
+# Getting the Top/Bottom %
+
+```{r}
+first_round %>% 
+  dplyr::select(Province, Milei_Votes, Milei_Pct) %>%
+  dplyr::arrange(desc(Milei_Pct)) %>% 
+  dplyr::slice_head(prop = 0.25)
+
+first_round %>% 
+  dplyr::select(Province, Milei_Votes, Milei_Pct) %>%
+  dplyr::arrange(desc(Milei_Pct)) %>% 
+  dplyr::slice_tail(prop = 0.25)
+```
+
+# Mutate - Creating Data
+
+```{r}
+
+first_round <- first_round %>% 
+  dplyr::mutate(Province = iconv(Province, from = "UTF-8", to = "latin1"))
+
+second_round <- second_round %>% 
+  dplyr::mutate(Province = iconv(Province, from = "UTF-8", to = "latin1"))
+```
+
+# Analysis
+
+## Research Question 1
+
+First Round of voting, where is Milei's base of support?
+
+### By Votes
+
+```{r}
+milei_most_votes <- first_round %>% 
+  dplyr::select(Province, Milei_Votes) %>% 
+  dplyr::arrange(desc(Milei_Votes)) %>% 
+  dplyr::slice_head(prop = 0.25)
+
+library(plotly)
+plot_ly(data = milei_most_votes, x = ~Province, y = ~Milei_Votes, type = "bar")
+```
+
+### By Share of the Vote (SOV)
+
+```{r}
+milei_most_sov <- first_round %>% 
+  dplyr::select(Province, Milei_Pct) %>% 
+  dplyr::arrange(desc(Milei_Pct)) %>% 
+  dplyr::slice_head(prop = 0.25)
+```
+
+### By Relative Frequency
+
+```{r}
+first_round %>% 
+  dplyr::select(Province, Milei_Votes, Milei_Pct) %>% 
+  dplyr::arrange(desc(Milei_Pct)) %>% 
+  dplyr::mutate(Support_Pct = Milei_Votes/sum(Milei_Votes)) %>% 
+  dplyr::mutate(Support_Pct = Support_Pct*100) %>% 
+  dplyr::mutate(Support_Pct = round(Support_Pct, digits = 1))
+
+milei_support_base <- first_round %>% 
+  dplyr::select(Province, contains("Milei")) %>% 
+  dplyr::mutate(Support_Pct = round(
+    x = (Milei_Votes/sum(Milei_Votes)*100), digits = 1
+  )) %>% 
+  dplyr::arrange(desc(Support_Pct)) %>% 
+  dplyr::slice_head(prop = 0.25)
+```
+
+```{r}
+plot_ly(
+  data = milei_support_base, 
+  labels = ~Province, 
+  values = ~Support_Pct, 
+  type = "pie"
+)
+```
+
+## Research Question 2
+
+In the second round of voting where was the widest and closest margins electorally
+
+### Margins (Votes)
+
+```{r}
+#milei_second_round_margins 
+milei_second_round_margins <- second_round %>% 
+  dplyr::select(Province, contains(c("Milei", "Massa"))) %>% 
+  dplyr::select(Province, Milei_Votes, Massa_Votes, Milei_Pct, Massa_Pct) %>% 
+  dplyr::mutate(Winner = ifelse(test = Milei_Pct > Massa_Pct, 
+                                yes = paste0("Milei"), 
+                                no = paste0("Massa"))) %>% 
+  dplyr::mutate(Milei_Margins_Votes = Milei_Votes-Massa_Votes) %>% 
+  dplyr::mutate(Milei_Margins_SOV = Milei_Pct-Massa_Pct) %>% 
+  dplyr::select(Province, Milei_Margins_Votes, Milei_Margins_SOV)
+
+milei_second_round_margins
+```
+
+```{r}
+wide_races_votes <- milei_second_round_margins %>% 
+  dplyr::arrange(desc(Milei_Margins_Votes)) %>% 
+  dplyr::slice_head(prop = 0.25) %>% 
+  dplyr::select(Province, Milei_Margins_Votes)
+
+closes_races_votes <- milei_second_round_margins %>% 
+  dplyr::arrange(desc(Milei_Margins_Votes)) %>% 
+  dplyr::slice_tail(prop = 0.25) %>% 
+  dplyr::select(Province, Milei_Margins_Votes)
+```
+
+```{r}
+# plot close races 
+plot_ly(data = closes_races_votes, x = ~Province, y = ~Milei_Margins_Votes, type = 'bar')
+```
+
+```{r}
+# plot wide races 
+plot_ly(data = wide_races_votes, x = ~Province, y = ~Milei_Margins_Votes, type = 'bar')
+
+```
+
+### Margins (SOV)
+
+```{r}
+# Margins by SOV 
+
+wide_races_sov <- milei_second_round_margins %>% 
+  dplyr::arrange(desc(Milei_Margins_SOV)) %>% 
+  dplyr::slice_head(prop = 0.25) %>% 
+  dplyr::select(Province, Milei_Margins_SOV)
+
+closes_races_sov <- milei_second_round_margins %>% 
+  dplyr::arrange(desc(Milei_Margins_SOV)) %>% 
+  dplyr::slice_tail(prop = 0.25) %>% 
+  dplyr::select(Province, Milei_Margins_SOV)
+
+```
+
+```{r}
+# plot wide margins 
+plot_ly(data = wide_races_sov, x = ~Province, y = ~Milei_Margins_SOV)
+```
+
+```{r}
+# plot close margins 
+plot_ly(data = closes_races_sov, x = ~Province, y = ~Milei_Margins_SOV)
+
+```
+
+# Conclusion
+
+In conclusion we have analyzed and manipulated the data to ascertain where Javier Milei draws his base of support from and from that achieve electoral success over the competition. Based on our analysis we know the following answers to our research questions provided by the research team lead.
+
+## Research Question 1
+
+First, Milei draws most of his support from the following five (5) provinces in order of votes:
+
+```{r}
+milei_most_votes <- milei_most_votes %>% 
+  dplyr::mutate(milei_votes_human_readable = format(Milei_Votes, big.mark = ","))
+```
+
+```{r}
+
+```
+
+-   `r milei_most_votes$Province[[1]]` \~ `r milei_most_votes$milei_votes_human_readable[[1]]` votes
+-   `r milei_most_votes$Province[[2]]` \~ `r milei_most_votes$milei_votes_human_readable[[2]]` votes
+-   `r milei_most_votes$Province[[3]]` \~ `r milei_most_votes$milei_votes_human_readable[[3]]` votes
+-   `r milei_most_votes$Province[[4]]` \~ `r milei_most_votes$milei_votes_human_readable[[4]]` votes
+-   `r milei_most_votes$Province[[5]]` \~ `r milei_most_votes$milei_votes_human_readable[[5]]` votes
+
+Together these 5 provinces accounts for a combined total of `r format(milei_most_votes_sum, big.mark = ",")`, or approximately `r milei_top5_votes_pct_of_sum`% of his base of support. Buenos Aires is especially key as it represents `r milei_ba_only_votes_pct_of_sum`% of his base of support, meaning support is centrally key in that particular province.
+
+## Research Question 2
+
+Secondly, we have examined the SOV margins to find where the closest races for Milei in the second round of the election. From our analysis we found the following had the closest races in all of Argentina.
+
+Next we extracted where the margins expanded to find where the closest races are, they are as follows:
+
+-   `r close_races_sov$Province[[1]]` \~ `r close_races_sov$Milei_Margins_SOV[[1]]`%
+-   `r close_races_sov$Province[[2]]` \~ `r close_races_sov$Milei_Margins_SOV[[2]]`%
+-   `r close_races_sov$Province[[3]]` \~ `r close_races_sov$Milei_Margins_SOV[[3]]`%
+
+However, widest margins looks like this:
+
+-   `r wide_races_sov$Province[[1]]` \~ `r wide_races_sov$Milei_Margins_SOV[[3]]`%
+-   `r wide_races_sov$Province[[2]]` \~ `r wide_races_sov$Milei_Margins_SOV[[3]]`%
+-   `r wide_races_sov$Province[[3]]` \~ `r wide_races_sov$Milei_Margins_SOV[[3]]`%

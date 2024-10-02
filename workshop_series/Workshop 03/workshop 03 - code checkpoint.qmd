@@ -1,0 +1,139 @@
+---
+title: "Workshop 03"
+subtitle: "Interactive Data Visualization"
+author: "Patrick Schnurbusch"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+format: 
+  html: 
+    embed-resources: true
+    df-print: paged
+editor: visual
+---
+
+# What is plotly?
+
+plotly is an amazing interactive graphics library from plotly, a Canadian company located in Montreal. Their technology is leveraged by S&P 500 Global and lyft. It is heavily used in the energy production industry as well as fortune 500 companies. plotly is open sourced and is available for free in both python and R.
+
+For R please go through [this](https://plotly.com/r/ "plotly reference guide") reference guide to see all the different charts and features available in R.
+
+```{r include = FALSE}
+library(dplyr)
+library(plotly)
+```
+
+```{r}
+df <- read.csv("00_data/US_Pres_2020_Results.csv", stringsAsFactors = FALSE)
+
+# rename first column 
+df <- df %>% dplyr::rename(State = 1)
+
+df %>% glimpse()
+
+df %>% summary()
+```
+
+# Pie Charts
+
+To create a basic pie chart we can do the following by aggregating all the votes cast per Biden and Trump in this election cycle first and pass that result onto plotly.
+
+```{r}
+votes_per_candidate <- df %>% 
+  dplyr::summarise(Biden_Votes = sum(Biden_Votes), Trump_Votes = sum(Trump_Votes)) %>% 
+  dplyr::rename(Biden = 1, Trump = 2) %>% 
+  tidyr::pivot_longer(cols = c(Biden, Trump)) %>% 
+  dplyr::rename(candidate = 1, totalvotes = 2)
+
+votes_per_candidate
+
+plot_ly(data = votes_per_candidate, values = ~totalvotes, labels = ~candidate, type = "pie")
+```
+
+# Scatter Plots
+
+```{r}
+plot_ly(data = df, x = ~State, y = ~Trump_Votes, type = 'scatter', mode = 'markers')
+
+plot_ly(data = df, x = ~State, y = ~Trump_Votes, type = 'scatter', mode = 'lines+markers')
+
+fig <- plot_ly(data = df, x = ~State, y = ~Trump_Votes, type = 'scatter', mode = 'markers', 
+        marker = list(
+          size = 10,
+          color = "red", 
+          line = list(color = 'rgba(152, 0, 0, .8)',
+                      width = 2)
+          )
+        )
+
+fig <- fig %>% layout(title = "US Presidential Election (2020)<br>Votes per State", 
+                      xaxis = list(title = ""),
+                      yaxis = list(title = "Votes", zeroline = FALSE))
+
+fig
+
+# add biden votes 
+fig <- fig %>% 
+  add_trace(data = df, x = ~State, y = ~Biden_Votes, type = 'scatter', mode = 'markers',
+            marker = list(
+              size = 10,
+              color = "blue", 
+              line = list(color = 'rgba(152, 0, 0, .8)',
+                          width = 2)
+            ))
+
+fig
+```
+
+# Bar Charts
+
+```{r}
+plot_ly(data = df, x = ~State, y = ~Trump_SOV, type = 'bar',
+        name = "Trump", 
+        marker = list(color = 'red')) %>% 
+  add_trace(data = df, x = ~State, y = ~Biden_SOV, type = 'bar',
+            name = 'Biden',
+            marker = list(color = "blue")) %>% 
+  layout(title = "US Presidential Election (2020)<br>Votes per State", 
+         xaxis = list(title = ""),
+         yaxis = list(title = "Share of the Vote (SOV)", zeroline = FALSE))
+
+# Stacked Bar Chart 
+plot_ly(data = df, x = ~State, y = ~Trump_SOV, type = 'bar',
+        name = "Trump", 
+        marker = list(color = 'red')) %>% 
+  add_trace(data = df, x = ~State, y = ~Biden_SOV, type = 'bar',
+            name = 'Biden',
+            marker = list(color = "blue")) %>% 
+  layout(title = "<b>US Presidential Election (2020)</b><br>Votes per State", 
+         barmode = 'stack', 
+         xaxis = list(title = ""),
+         yaxis = list(title = "Share of the Vote (SOV)", zeroline = FALSE))
+
+# remove legend 
+
+plot_ly(data = df, x = ~State, y = ~Trump_SOV, type = 'bar',
+        name = "Trump", 
+        marker = list(color = 'red')) %>% 
+  add_trace(data = df, x = ~State, y = ~Biden_SOV, type = 'bar',
+            name = 'Biden',
+            marker = list(color = "blue")) %>% 
+  layout(title = "<b>US Presidential Election (2020)</b><br>Votes per State", 
+         barmode = 'stack', 
+         xaxis = list(title = ""),
+         yaxis = list(title = "Share of the Vote (SOV)", zeroline = FALSE), 
+         showlegend = FALSE)
+
+
+# hovermode = "unified
+plot_ly(data = df, x = ~State, y = ~Trump_SOV, type = 'bar',
+        name = "Trump", 
+        marker = list(color = 'red')) %>% 
+  add_trace(data = df, x = ~State, y = ~Biden_SOV, type = 'bar',
+            name = 'Biden',
+            marker = list(color = "blue")) %>% 
+  layout(title = "<b>US Presidential Election (2020)</b><br>Votes per State", 
+         barmode = 'stack', 
+         xaxis = list(title = ""),
+         yaxis = list(title = "Share of the Vote (SOV)", zeroline = FALSE), 
+         showlegend = FALSE, 
+         hovermode = "x-unified")
+```

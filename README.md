@@ -22,7 +22,7 @@ Through workshops, projects, and competitions, students will learn to analyze an
     - [Workshop 1 – Learning R from Scratch (Sep 17/19)](#workshop-1--learning-r-from-scratch-sep-1719)
     - [Workshop 2 – Data Cleaning/Data Manipulation (Sep 24/26)](#workshop-2--data-cleaningdata-manipulation-sep-2426)
     - [Workshop 3 – Interactive Data Visualization (Oct 8/10)](#workshop-3--interactive-data-visualization-oct-810)
-    - [Workshop 4 – Interactive Geospatial Visualization (Oct 22/24)](#workshop-4--interactive-geospatial-visualization-oct-2224)
+    - [Workshop 4 – Interactive Geospatial Visualization (Oct 24)](#workshop-4--interactive-geospatial-visualization-oct-2224)
     - [Workshop 5 – Web App Development – Shiny (Nov 4)](#workshop-5--web-app-development--shiny-nov-4)
 - [Winter Semester](#winter-semester)
     - [Workshop 6 – Machine Learning/Predictive Modelling](#workshop-6--machine-learningpredictive-modelling)
@@ -65,7 +65,7 @@ SDAC workshops are designed to provide hands-on experience in data analysis usin
 - Packages: Plotly
 - Dataset: 2020 American Election
 
-### Workshop 4 – Interactive Geospatial Visualization (Oct 22/24)
+### Workshop 4 – Interactive Geospatial Visualization (Oct 24)
 - Packages: Sf, Leaflet
 - Dataset: 2020 American Election
 

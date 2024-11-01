@@ -9,7 +9,7 @@ Through workshops, projects, and competitions, students will learn to analyze an
 
 ## Current Events
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20-%20Workshop%204.jpg" alt="SDAC Workshop 4" style="width:410px;">
+  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20-%20Workshop%205.jpg" alt="SDAC Workshop 5" style="width:410px;">
 </div>
 
 ## SDAC Team (PSSA)

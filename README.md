@@ -8,9 +8,7 @@ Through workshops, projects, and competitions, students will learn to analyze an
   <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/UofT%20Logo.jpg" alt="UofT Logo" style="width:350px; margin-right: 10px;">
 
 ## Current Events
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20-%20Workshop%205.jpg" alt="SDAC Workshop 5" style="width:410px;">
-</div>
+See you in the Winter Semester!
 
 ## SDAC Team (PSSA)
 - Michael Cowan, Patrick Schnurbusch (BA Political Science, 2015), Ibrahim Sereer, Eric Wu
@@ -112,6 +110,3 @@ Randomly scheduled, informal environment dedicated to learning to code, playing 
 
 # Stats & Coding Helpline
 Request help with specific problems and be connected with an upper-year student or committee member who can assist! Email sdac.pssa@gmail.com to request a timeslot!
-
-# Semesterly Datathons
-TBA

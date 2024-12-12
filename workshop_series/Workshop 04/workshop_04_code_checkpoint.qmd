@@ -1,0 +1,205 @@
+---
+title: "Mapping US Electoral Data"
+author: "Patrick Reza Schnurbusch"
+date: "2024-04-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# [American Presidency Project: Presidential Elections Data](https://www.presidency.ucsb.edu/statistics/elections)
+
+The American Presidency Project at the University of California, Santa Barbara, presents the electoral and popular vote results from 1789 to the present. Additional presidential election-related data is also provided such as voter turnout, Gallup Poll accuracy, representation of the president's party in House elections, and popular and electoral vote mandates.
+
+Data Gathered From Here
+
+<https://www.presidency.ucsb.edu/statistics/elections/2020>
+
+```{r import_libraries, include = FALSE}
+library(tigris)
+library(sf)
+library(leaflet)
+library(dplyr)
+```
+
+```{r}
+states <- sf::read_sf("https://rstudio.github.io/leaflet/json/us-states.geojson")
+class(states)
+names(states)
+```
+
+```{r}
+election_results <- read.csv("00_data/US_Pres_2020_Results.csv")
+
+election_results <- election_results %>% 
+  dplyr::rename(name = 1)
+```
+
+```{r}
+# first we need to make sure they are same the length 
+nrow(states)
+nrow(election_results)
+```
+
+```{r}
+anti_join(states, election_results, by = "name")  # Peurto Rico is IN our states but NOT in our election results 
+```
+
+```{r}
+# remove the shape 
+states <- states %>% dplyr::filter(name != "Puerto Rico")
+
+# confirm shape removal 
+nrow(states)
+nrow(election_results)
+```
+
+```{r}
+# Do a spatial join 
+results_sf <- merge(states, election_results)
+results_sf %>% glimpse()
+```
+
+# Introduction to Mapping
+
+```{r}
+# Convert CRS 
+results_sf <- st_transform(results_sf, crs = 4326)
+```
+
+```{r}
+
+m <- leaflet(results_sf) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  setView(-98.5795, 39.8282, zoom=3)
+
+leaflet(results_sf) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  setView(-98.5795, 39.8282, zoom=3) %>% 
+  addPolygons(fillColor = "white",
+              color = "black",
+              weight = 0.5)
+
+# Color Code by Winner 
+results_sf <- results_sf %>% 
+  dplyr::mutate(Winner = if_else(Trump_Electoral_Votes > 1, "Trump", "Biden"))
+
+# Define color palette for outcomes
+pal <- colorFactor(
+  palette = c("blue", "red"),  # Red for "Trump", Blue for Biden
+  domain = c("Trump", "Biden")  # Adjust to your specific outcome values
+)
+
+leaflet(results_sf) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  setView(-98.5795, 39.8282, zoom=3) %>% 
+  addPolygons(
+    fillColor = ~pal(Winner),
+    fillOpacity = 0.7, 
+    color = "black",
+    weight = 0.5)
+```
+
+# Creating a more sophisticated Map
+
+```{r}
+# Margins Map 
+
+# Calc Margins
+results_sf <- results_sf %>% 
+  dplyr::mutate(MarginSOV = Trump_SOV-Biden_SOV)
+
+# Create Pal 
+pal <- colorNumeric("RdYlBu", domain = results_sf$MarginSOV, reverse = TRUE)
+
+leaflet(results_sf) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  setView(-98.5795, 39.8282, zoom=3) %>% 
+  addPolygons(
+    fillColor = ~pal(MarginSOV),
+    fillOpacity = 0.7, 
+    color = "black",
+    weight = 0.5)
+```
+
+```{r}
+# Adding Highlights 
+leaflet(results_sf) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  setView(-98.5795, 39.8282, zoom=3) %>% 
+  addPolygons(
+    fillColor = ~pal(MarginSOV),
+    fillOpacity = 0.7, 
+    color = "black",
+    weight = 0.5,
+    highlightOptions = highlightOptions(
+      weight = 5, 
+      color = "red", 
+      fillOpacity = 1, 
+      bringToFront = TRUE
+    ))
+```
+
+```{r}
+# Adding Info 
+labels <- sprintf(
+  "<strong>%s (Winner: %s)</strong>
+  <br>Trump: %s
+  <br>Biden: %s
+  <br> Margins (SOV): %s",
+  results_sf$name, 
+  results_sf$Winner,
+  results_sf$Trump_SOV, results_sf$Biden_SOV, results_sf$MarginSOV
+) %>% lapply(htmltools::HTML)
+
+
+leaflet(results_sf) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  setView(-98.5795, 39.8282, zoom=3) %>% 
+  addPolygons(
+    fillColor = ~pal(MarginSOV),
+    fillOpacity = 0.7, 
+    color = "black",
+    weight = 0.5,
+    highlightOptions = highlightOptions(
+      weight = 5, 
+      color = "red", 
+      fillOpacity = 1, 
+      bringToFront = TRUE
+    ),
+    label = labels,
+    labelOptions = labelOptions(
+      style = list("font-weight" = "normal", padding = "3px 8px"),
+      textsize = "15px",
+      direction = "auto")
+    )
+```
+
+```{r}
+# Adding a Legend 
+leaflet(results_sf) %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  setView(-98.5795, 39.8282, zoom=3) %>% 
+  addPolygons(
+    fillColor = ~pal(MarginSOV),
+    fillOpacity = 0.7, 
+    color = "black",
+    weight = 0.5,
+    highlightOptions = highlightOptions(
+      weight = 5, 
+      color = "red", 
+      fillOpacity = 1, 
+      bringToFront = TRUE
+    ),
+    label = labels,
+    labelOptions = labelOptions(
+      style = list("font-weight" = "normal", padding = "3px 8px"),
+      textsize = "15px",
+      direction = "auto")
+  ) %>% 
+  addLegend(
+    pal = pal, values = ~MarginSOV, opacity = 0.7, title = "Margins", position = "bottomright"
+  )
+```

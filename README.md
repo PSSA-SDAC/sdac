@@ -1,7 +1,7 @@
 # UTSC PSSA – Social Data Analysis Committee 
 The Social Data Analysis Committee (SDAC) aims to introduce undergraduate students to data science skills that can enhance their research capabilities and professional careers. 
 
-Through workshops, projects, and competitions, students will learn to analyze and interpret social data, develop professional GitHub portfolios, and gain insights into political, social, and economic issues.
+Throughout our workshop series, students will learn to analyze and interpret social data, develop professional GitHub portfolios, and gain insights into political, social, and economic issues.
 
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20Template.png" alt="SDAC Template" style="width:350px; margin-right: 10px;">

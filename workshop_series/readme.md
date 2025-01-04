@@ -1,6 +1,6 @@
 # Workshops Series
 - Computational and quantitative analysis skills to social science students. 
-- Instructors : Michael Cowan, Patrick Schnurbusch 
+### Instructors : Michael Cowan, Patrick Schnurbusch 
 
 ## Workshop 1 – Learning R from Scratch (Sep 17/19)
 - R, R-Studio, Installation & Packages

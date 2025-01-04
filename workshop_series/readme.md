@@ -17,7 +17,7 @@
 - Packages: Sf, Leaflet
 - Dataset: 2020 American Election
 
-## Reading week: Oct 28 - Nov 1 - No Coding Workshops 
+### Reading week: Oct 28 - Nov 1 - No Coding Workshops 
 
 ## Workshop 5 – Web App Development – Shiny (Nov 4)
 - Shiny (create free account: www.shinyapps.io)

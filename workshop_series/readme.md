@@ -1,4 +1,4 @@
-# Workshops Series
+# SDAC Workshops Series
 - Computational and quantitative analysis skills to social science students. 
 ### Instructors : Michael Cowan, Patrick Schnurbusch 
 

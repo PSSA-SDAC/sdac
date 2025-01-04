@@ -100,7 +100,7 @@ _Reading week: Oct 28 - Nov 1_
 Randomly scheduled, informal environment dedicated to learning to code, playing with data, and collaborating with peers. Events will appear on https://www.instagram.com/pssa.utsc/.
 
 # Faculty/Guest Talks
-## Topics
+### Topics
 - Game Theory
 - Survey Research
 - NVivo demo

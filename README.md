@@ -28,7 +28,6 @@ Throughout our workshop series, students will learn to analyze and interpret soc
     - [Workshop 8 – Machine Learning/Predictive Modelling (Feb 24)](#workshop-8--machine-learningpredictive-modelling-feb-24)
     - [Workshop 9 – Learning Python (March 24)](#workshop-9--learning-python-march-24)
 - [Drop-in Coding Days](#drop-in-coding-days)
-- [Faculty/Guest Talks](#facultyguest-talks)
 - [Stats & Coding Helpline](#stats--coding-helpline)
 
 # Workshop Series
@@ -92,15 +91,6 @@ _Reading week: Oct 28 - Nov 1_
 
 # Drop-in Coding Days
 Randomly scheduled, informal environment dedicated to learning to code, playing with data, and collaborating with peers. Events will appear on https://www.instagram.com/pssa.utsc/.
-
-# Faculty/Guest Talks
-### Topics
-- Game Theory
-- Survey Research
-- NVivo demo
-- Indigenous Research Methodologies
-- Natural Language Processing
-- Algorithmic Gerrymandering
 
 # Stats & Coding Helpline
 Request help with specific problems and be connected with an upper-year student or committee member who can assist! Email sdac.pssa@gmail.com to request a timeslot!

@@ -7,8 +7,8 @@ Throughout our workshop series, students will learn to analyze and interpret soc
   <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/SDAC%20Template.png" alt="SDAC Template" style="width:350px; margin-right: 10px;">
   <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/UofT%20Logo.jpg" alt="UofT Logo" style="width:350px; margin-right: 10px;">
 
-## Current Events
-See you in the Winter Semester!
+## Next Event
+- Workshop 6 – Building your Portfolio (Feb 10)
 
 ## SDAC Team (PSSA)
 - Michael Cowan, Patrick Schnurbusch (BA Political Science, 2015), Ibrahim Sereer, Eric Wu
@@ -23,15 +23,13 @@ See you in the Winter Semester!
     - [Workshop 4 – Interactive Geospatial Visualization (Oct 24)](#workshop-4--interactive-geospatial-visualization-oct-24)
     - [Workshop 5 – Web App Development – Shiny (Nov 4)](#workshop-5--web-app-development--shiny-nov-4)
 - [Winter Semester](#winter-semester)
-    - [Workshop 6 – Machine Learning/Predictive Modelling](#workshop-6--machine-learningpredictive-modelling)
-    - [Workshop 7 – Deep Learning](#workshop-7--deep-learning)
-    - [Workshop 8 – Building your Portfolio](#workshop-8--building-your-portfolio)
-    - [Workshop 9 – Web Scraping](#workshop-9--web-scraping)
-    - [Workshop 10 – Learning Python from Scratch](#workshop-10--learning-python-from-scratch)
+    - [Workshop 6 – Building your Portfolio (Feb 10)](#workshop-6--building-your-portfolio-feb-10)
+    - [Workshop 7 – Text as Data (March 10)](#workshop-7--text-as-data-march-10)
+    - [Workshop 8 – Machine Learning/Predictive Modelling (Feb 24)](#workshop-8--machine-learningpredictive-modelling-feb-24)
+    - [Workshop 9 – Learning Python (March 24)](#workshop-9--learning-python-march-24)
 - [Drop-in Coding Days](#drop-in-coding-days)
 - [Faculty/Guest Talks](#facultyguest-talks)
 - [Stats & Coding Helpline](#stats--coding-helpline)
-- [Semesterly Datathons](#semesterly-datathons)
 
 # Workshop Series
 SDAC workshops are designed to provide hands-on experience in data analysis using R and Python – covering various topics from research methods to machine learning. 
@@ -77,24 +75,20 @@ _Reading week: Oct 28 - Nov 1_
 
 ## Winter Semester
 
-### Workshop 6 – Machine Learning/Predictive Modelling
-- Dataset: 2024 American Election
-
-### Workshop 7 – Deep Learning
-- What is Deep Learning?
-- Graduate project demonstration (Neural Networks & Twitter firehose)
-
-### Workshop 8 – Building your Portfolio
+### Workshop 6 – Building your Portfolio (Feb 10)
 - GitHub walkthrough, GitHub.io, LaTeX
 
-### Workshop 9 – Web Scraping
-- Selenium (R)
+### Workshop 7 – Text as Data (March 10)
+- Dataset: Canadian-Indigenous Treaties
 
-### Workshop 10 – Learning Python from Scratch
+### Workshop 8 – Machine Learning/Predictive Modelling (Feb 24)
+- Dataset: 2024 American Election
+
+### Workshop 9 – Learning Python (March 24)
 - Installation & Modules, Language basics
 - Loops, Basic Coding
 - Intro to Pandas
-- Project demonstrations
+- Project demonstration
 
 # Drop-in Coding Days
 Randomly scheduled, informal environment dedicated to learning to code, playing with data, and collaborating with peers. Events will appear on https://www.instagram.com/pssa.utsc/.

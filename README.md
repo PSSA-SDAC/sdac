@@ -78,6 +78,7 @@ _Reading week: Oct 28 - Nov 1_
 - GitHub walkthrough, GitHub.io, LaTeX
 
 ### Workshop 7 – Text as Data (March 10)
+- Packages: tm, kernlab, SnowballC, randomForest, xgboost, caret, plotly
 - Dataset: Canadian-Indigenous Treaties
 
 ### Workshop 8 – Machine Learning/Predictive Modelling (Feb 24)

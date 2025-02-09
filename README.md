@@ -23,10 +23,9 @@ Throughout our workshop series, students will learn to analyze and interpret soc
     - [Workshop 4 – Interactive Geospatial Visualization (Oct 24)](#workshop-4--interactive-geospatial-visualization-oct-24)
     - [Workshop 5 – Web App Development – Shiny (Nov 4)](#workshop-5--web-app-development--shiny-nov-4)
 - [Winter Semester](#winter-semester)
-    - [Workshop 6 – Building your Portfolio (Feb 10)](#workshop-6--building-your-portfolio-feb-10)
+    - [Workshop 6 – Building your Portfolio (Feb 17)](#workshop-6--building-your-portfolio-feb-17)
     - [Workshop 7 – Text as Data (March 10)](#workshop-7--text-as-data-march-10)
-    - [Workshop 8 – Machine Learning/Predictive Modelling (Feb 24)](#workshop-8--machine-learningpredictive-modelling-feb-24)
-    - [Workshop 9 – Learning Python (March 24)](#workshop-9--learning-python-march-24)
+    - [Workshop 8 – Machine Learning/Predictive Modelling (Mar 24)](#workshop-8--machine-learningpredictive-modelling-mar-24)
 - [Drop-in Coding Days](#drop-in-coding-days)
 - [Stats & Coding Helpline](#stats--coding-helpline)
 
@@ -74,21 +73,15 @@ _Reading week: Oct 28 - Nov 1_
 
 ## Winter Semester
 
-### Workshop 6 – Building your Portfolio (Feb 10)
+### Workshop 6 – Building your Portfolio (Feb 17)
 - GitHub walkthrough, GitHub.io, LaTeX
 
 ### Workshop 7 – Text as Data (March 10)
 - Packages: tm, kernlab, SnowballC, randomForest, xgboost, caret, plotly
 - Dataset: Canadian-Indigenous Treaties
 
-### Workshop 8 – Machine Learning/Predictive Modelling (Feb 24)
-- Dataset: 2024 American Election
-
-### Workshop 9 – Learning Python (March 24)
-- Installation & Modules, Language basics
-- Loops, Basic Coding
-- Intro to Pandas
-- Project demonstration
+### Workshop 8 – Machine Learning/Predictive Modelling (Mar 24)
+- Dataset: 2024 Hypothetical RCV Election
 
 # Drop-in Coding Days
 Randomly scheduled, informal environment dedicated to learning to code, playing with data, and collaborating with peers. Events will appear on https://www.instagram.com/pssa.utsc/.

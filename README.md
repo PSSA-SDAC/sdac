@@ -24,7 +24,7 @@ Throughout our workshop series, students will learn to analyze and interpret soc
     - [Workshop 5 – Web App Development – Shiny (Nov 4)](#workshop-5--web-app-development--shiny-nov-4)
 - [Winter Semester](#winter-semester)
     - [Workshop 6 – Building your Portfolio (Feb 17)](#workshop-6--building-your-portfolio-feb-17)
-    - [Workshop 7 – Text as Data (March 10)](#workshop-7--text-as-data-march-10)
+    - [Workshop 7 – Text as Data (Mar 10)](#workshop-7--text-as-data-mar-10)
     - [Workshop 8 – Machine Learning/Predictive Modelling (Mar 24)](#workshop-8--machine-learningpredictive-modelling-mar-24)
 - [Drop-in Coding Days](#drop-in-coding-days)
 - [Stats & Coding Helpline](#stats--coding-helpline)
@@ -76,7 +76,7 @@ _Reading week: Oct 28 - Nov 1_
 ### Workshop 6 – Building your Portfolio (Feb 17)
 - GitHub walkthrough, GitHub.io, LaTeX
 
-### Workshop 7 – Text as Data (March 10)
+### Workshop 7 – Text as Data (Mar 10)
 - Packages: tm, kernlab, SnowballC, randomForest, xgboost, caret, plotly
 - Dataset: Canadian-Indigenous Treaties
 

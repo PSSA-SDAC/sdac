@@ -41,7 +41,7 @@ Join us on Zoom: https://utoronto.zoom.us/j/7179732234
 - Academic CV (Research Experience, Publications, Conferences)
 - Developing a GitHub portfolio, GitHub.io
 - Installing IDEs
-- Accessibility: GPT – how to interact and learn to code with AI
+- Accessibility: how to get started coding with AI
 
 ### Methods – Recap, Theses, Intro to Stats (Sep 12)
 - Recap

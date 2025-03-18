@@ -8,7 +8,7 @@ Throughout our workshop series, students will learn to analyze and interpret soc
   <img src="https://raw.githubusercontent.com/PSSA-SDAC/sdac/main/images/UofT%20Logo.jpg" alt="UofT Logo" style="width:350px; margin-right: 10px;">
 
 ## Next Event
-- Workshop 6 – Building your Portfolio (Feb 10)
+- Workshop 8 – Machine Learning/Predictive Modelling (Mar 24)
 
 ## SDAC Team (PSSA)
 - Michael Cowan, Patrick Schnurbusch (BA Political Science, 2015), Ibrahim Sereer, Eric Wu
@@ -41,7 +41,7 @@ Join us on Zoom: https://utoronto.zoom.us/j/7179732234
 - Academic CV (Research Experience, Publications, Conferences)
 - Developing a GitHub portfolio, GitHub.io
 - Installing IDEs
-- Accessibility: GPT – how to interact and learn to code with AI
+- Accessibility: how to get started coding with AI
 
 ### Methods – Recap, Theses, Intro to Stats (Sep 12)
 - Recap

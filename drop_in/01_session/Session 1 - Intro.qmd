@@ -13,6 +13,7 @@ editor: visual
 # 1. Packages
 
 ```{r}
+install.packages("tidyverse")
 library(tidyverse)
 ```
 
@@ -124,10 +125,10 @@ median(numbers_list) # Returns the median value of 'numbers', which is 5.
 mean(numbers_list) # Returns the mean (average) value of 'numbers', which is 5.
 
 # standard of deviation (with the argument "sd")
-std_dev <- sd(numbers_list)  
+std_dev <- sd(numbers_list)
 # Calculates the standard deviation of 'numbers' and stores it in "std_dev.
 
-std_dev  # Prints the standard deviation to the console.
+std_dev  # Prints the standard deviation to the console.w
 ```
 
 # 7. Athletes
@@ -160,15 +161,14 @@ athletes # Look at what's in athletes
 # Calculate the average height (Ht) for each sport:
 average_height <- athletes %>%
   group_by(Sport) %>%  # Group the data by the "Sport" column
-  
   summarize(avg_ht = mean(Ht, na.rm = TRUE))  
   # Calculate the average height for each sport, ignoring missing values
 
 # View the summarized data frame:
 average_height
 
-BMI
-WT
+# BMI
+# WT
 ```
 
 # 8. Plotting the Athletes
